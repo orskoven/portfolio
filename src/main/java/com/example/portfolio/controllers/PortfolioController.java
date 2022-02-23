@@ -11,8 +11,13 @@ public class PortfolioController {
     public String getFrontPage(){
         return "index";
     }
-    @GetMapping("/imsimon")
-    public String getImsimon(){
-        return "imsimon";
+    @GetMapping("/aboutMe")
+    public String aboutMe(){
+        return "aboutMe";
+    }
+
+    @GetMapping("/cv")
+    public String getCv(){
+        return "cv";
     }
 }
