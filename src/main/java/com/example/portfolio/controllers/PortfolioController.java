@@ -16,8 +16,8 @@ public class PortfolioController {
         return "aboutMe";
     }
 
-    @GetMapping("/cv")
+    @GetMapping("/curriculum")
     public String getCv(){
-        return "cv";
+        return "curriculum";
     }
 }
