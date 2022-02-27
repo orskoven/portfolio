@@ -70,17 +70,97 @@
         80%  {right:0px; top:200px;}
         100% {right:0px; top:0px;}
     }
+    .animationsprofilbillede {
+        position: relative;
+        animation: mymove 15s infinite;
+    }
+    #div1 {
+        position: relative;
+        animation: mymove1 15s infinite;
+    }
+    #div2 {
+        position: relative;
+        animation: mymove2 15s infinite;
+    }
+    #div3 {
+        position: relative;
+        animation: mymove3 15s infinite;
+    }
+    #div4 {
+        position: relative;
+        animation: mymove4 15s infinite;
+    }
+    #div5 {
+        position: relative;
+        animation: mymove5 15s infinite;
+    }
+
+
+    #div1 {animation-timing-function: linear;}
+    #div2 {animation-timing-function: ease;}
+    #div3 {animation-timing-function: ease-in;}
+    #div4 {animation-timing-function: ease-out;}
+    #div5 {animation-timing-function: ease-in-out;}
+
+    @keyframes mymove1 {
+        from {left: 0px;}
+        0%   {right:-1000px; top:-1000px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
+        to {left: 500px;}
+    }
+    @keyframes mymove2 {
+        0%   {right:-1000px; top:-1000px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
+        from {left: 0px;}
+        to {left: 500px;}
+    }
+    @keyframes mymove3 {
+        0%   {right:-1000px; top:-1000px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
+        from {left: 100px;}
+        to {left: 500px;}
+    }
+    @keyframes mymove4 {
+        0%   {right:-1000px; top:-1000px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
+        from {left: 0px;}
+        to {left: 500px;}
+    }
+    @keyframes mymove5 {
+        0%   {right:-1000px; top:-1000px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
+        from {left: 100px;}
+        to {left: 500px;}
+    }
 </style>
 <h1 id="header" style="margin-right: 250px; margin-left: 250px">
 </h1>
+</head>
 <body>
 <div class="text">
     <p class="textmesage" style="margin-right: 0px; margin-left: 0px">
          </p>
-</div>
-<div class="boxboxbox"></div>
-<div class="profilbillede">
-    <img src="1598005912937.jpeg">
+
 </div>
 <div class="box">
     <div id="bblue">About Me</div>
@@ -88,4 +168,12 @@
     <div id="bgreen">Projects</div>
 </div>
 </body>
+<div class="animationsprofilbillede">
+    <img src="Screenshot%202022-02-27%20at%2015.43.43.png" id="div1"  alt="Screenshot%202022-02-27%20at%2015.43.43.png"/>
+    <img src="Screenshot%202022-02-27%20at%2015.43.58.png" id="div2"  alt="Screenshot%202022-02-27%20at%2015.43.58.png" />
+    <img src="Screenshot%202022-02-27%20at%2015.44.07.png"  id="div3" alt="Screenshot%202022-02-27%20at%2015.44.07.png"/>
+    <img src="Screenshot%202022-02-27%20at%2015.44.15.png"  id="div4" alt="Screenshot%202022-02-27%20at%2015.44.15.png"/>
+    <img src="Screenshot%202022-02-27%20at%2015.44.23.png"  id="div5" alt="Screenshot%202022-02-27%20at%2015.44.23.png"/>
+</div>
+
 </html>
