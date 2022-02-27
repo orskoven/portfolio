@@ -14,9 +14,6 @@
         padding: 50px;
         margin: 20px;
         position: relative;
-        animation-name: textbox;
-        animation-duration: 10s;
-        animation-delay: 0s;
     }
     .text{
         display: flex;
@@ -49,15 +46,29 @@
     .profilbillede{
         display: flex;
         justify-content: space-around;
+        position: relative;
+        animation-name: textbox;
+        animation-duration: 10s;
+        animation-delay: 0s;
+    }
+    .boxboxbox{
+        padding: 50px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        animation-name: textbox;
+        animation-duration: 10s;
+        animation-delay: 0s;
     }
 
     @keyframes textbox {
-        0%   {background-color: blue; right:0px; top:0px;}
-        20%  {background-color: red; right:200px; top:200px;}
-        40%  {background-color: yellow; right:0px; top:200px;}
-        60%  {background-color: green; right:-200px; top:200px;}
-        80%  {background-color: darkgoldenrod; right:0px; top:200px;}
-        100% {background-color: deepskyblue; right:0px; top:0px;}
+        0%   {: transparent; right:0px; top:0px;}
+        20%  {right:200px; top:200px;}
+        40%  { right:0px; top:200px;}
+        60%  { right:-200px; top:200px;}
+        80%  {right:0px; top:200px;}
+        100% {right:0px; top:0px;}
     }
 </style>
 <h1 id="header" style="margin-right: 250px; margin-left: 250px">
@@ -67,6 +78,7 @@
     <p class="textmesage" style="margin-right: 0px; margin-left: 0px">
          </p>
 </div>
+<div class="boxboxbox"></div>
 <div class="profilbillede">
     <img src="1598005912937.jpeg">
 </div>
