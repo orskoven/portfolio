@@ -10,12 +10,18 @@
         font-family: Monaco;
 
     }
-    .text{
-        font-family: Monaco;
+    .boxbox{
+        padding: 50px;
+        margin: 20px;
         position: relative;
-        animation-name: text;
+        animation-name: textbox;
         animation-duration: 10s;
-        animation-delay: 10s;
+        animation-delay: 0s;
+    }
+    .text{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Microsoft Sans Serif";
     }
     #bgreen{
         padding: 50px;
@@ -38,26 +44,31 @@
     .box{
         display: flex;
         justify-content: space-around;
-        font-family: Monaco;
+        font-family: Microsoft Sans Serif;
+    }
+    .profilbillede{
+        display: flex;
+        justify-content: space-around;
     }
 
-    @keyframes text {
-        0%   {color: blue; right:0px; top:0px;}
-        20%  {color: red; right:200px; top:200px;}
-        40%  {color: yellow; right:0px; top:200px;}
-        60%  {color: green; right:-200px; top:200px;}
-        80%  {color: darkgoldenrod; right:0px; top:200px;}
-        100% {color: deepskyblue; right:0px; top:0px;}
+    @keyframes textbox {
+        0%   {background-color: blue; right:0px; top:0px;}
+        20%  {background-color: red; right:200px; top:200px;}
+        40%  {background-color: yellow; right:0px; top:200px;}
+        60%  {background-color: green; right:-200px; top:200px;}
+        80%  {background-color: darkgoldenrod; right:0px; top:200px;}
+        100% {background-color: deepskyblue; right:0px; top:0px;}
     }
 </style>
 <h1 id="header" style="margin-right: 250px; margin-left: 250px">
-    Hello World!
 </h1>
 <body>
 <div class="text">
-    <p class="textmesage" style="margin-right: 250px; margin-left: 250px">
-        I'am Simon, an aspiring developer studying an AP in Computer Science at KEA.
+    <p class="textmesage" style="margin-right: 0px; margin-left: 0px">
          </p>
+</div>
+<div class="profilbillede">
+    <img src="1598005912937.jpeg">
 </div>
 <div class="box">
     <div id="bblue">About Me</div>
