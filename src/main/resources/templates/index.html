@@ -1,56 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simons Portfolio</title>
+</head>
+
 <style>
-    .header{
-        font-size: 100px;
-        font-family: "Arial";
-        text-align: end;
-        background: white;
+    #header{
+        font-family: Monaco;
+
     }
-    .body-text{
-        font-family: "Arial";
-        font-size: 100px;
+    .text{
+        font-family: Monaco;
+        position: relative;
+        animation-name: text;
+        animation-duration: 10s;
+        animation-delay: 10s;
     }
-    .audioplayer{
-        margin: 50px;
+    #bgreen{
+        padding: 50px;
+        margin: 20px;
+        animation-name: boxani;
+        animation-duration: 10s;
+    }
+    #bblue{
+        padding: 50px;
+        margin: 20px;
+        animation-name: boxani;
+        animation-duration: 10s;
+    }
+    #bred{
+        padding: 50px;
+        margin: 20px;
+        animation-name: boxani;
+        animation-duration: 10s;
+    }
+    .box{
+        display: flex;
+        justify-content: space-around;
+        font-family: Monaco;
+    }
+
+    @keyframes text {
+        0%   {color: blue; right:0px; top:0px;}
+        20%  {color: red; right:200px; top:200px;}
+        40%  {color: yellow; right:0px; top:200px;}
+        60%  {color: green; right:-200px; top:200px;}
+        80%  {color: darkgoldenrod; right:0px; top:200px;}
+        100% {color: deepskyblue; right:0px; top:0px;}
     }
 </style>
-<title>
-SIMONS PORTFOLIO
-</title>
-    <div class="header" >
-        <header>
-            <a href="aboutMe.html">
-            <p style = "margin-left: 50px; border:100px solid white; align:center ">
-                I'M SIMON
-            </p>
-            </a>
-        </header>
-    </div>
-
+<h1 id="header" style="margin-right: 250px; margin-left: 250px">
+    Hello World!
+</h1>
 <body>
-<div class="body-text">
-    <div class="boxone" style="margin: 100px; border: 700px solid white; align-items: end ">
-    </div>
-    <p style="margin-left: 50px">
-    i was born by the danish west coast
-    </p>
-    <div class="boxone" style="margin: 100px; border: 500px solid white; align-items: end">
-    </div>
-    <p style="margin-right: 50px" align="end">
-    raised in a small village
-    </p>
-    <div class="boxone" style="margin: 100px; border: 500px solid white; align-items: end">
-    </div>
+<div class="text">
+    <p class="textmesage" style="margin-right: 250px; margin-left: 250px">
+        I'am Simon, an aspiring developer studying an AP in Computer Science at KEA.
+         </p>
 </div>
-    <div class="link-cv" >
-        <p style = "margin-left: 50px; border:100px solid white; align:center ">
-        and this is my
-            <a class="link" href="curriculum.html">
-                    curriculum vitae.
-            </a>
-        </p>
-    </div>
-    <div class="boxone" style="margin: 100px; border: 1000px solid white; align-items: end">
-    </div>
+<div class="box">
+    <div id="bblue">About Me</div>
+    <div id="bred">CV</div>
+    <div id="bgreen">Projects</div>
+</div>
 </body>
 </html>
